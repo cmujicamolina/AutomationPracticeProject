@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class runners.TestRunner</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class runners.TestRunner</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/runners.html">runners</a> &gt; TestRunner</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">1</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">46.673s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+<li>
+<a href="#tab2">Standard error</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">feature[0](User login)</td>
+<td class="success">46.673s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>@SmokeTest
+Feature: User login
+
+  @ValidLogin
+  Scenario Outline: The user registers in the portal ?[90m# LoginUser.feature:5?[0m
+    ?[36mGiven ?[0m?[36mthe customer is on the main page?[0m
+    ?[36mWhen ?[0m?[36mclick sig in?[0m
+    ?[36mAnd ?[0m?[36menter the email &lt;email&gt;?[0m
+    ?[36mAnd ?[0m?[36mclick the create an account?[0m
+    ?[36mAnd ?[0m?[36mclick title &lt;title&gt;?[0m
+    ?[36mAnd ?[0m?[36mput firstname &lt;firstname&gt;?[0m
+    ?[36mAnd ?[0m?[36mput lastname &lt;lastname&gt;?[0m
+    ?[36mAnd ?[0m?[36mput password &lt;password&gt;?[0m
+    ?[36mAnd ?[0m?[36mselect day &lt;day&gt;?[0m
+    ?[36mAnd ?[0m?[36mselect month &lt;month&gt;?[0m
+    ?[36mAnd ?[0m?[36mselect year &lt;year&gt;?[0m
+    ?[36mAnd ?[0m?[36mput address &lt;address&gt;?[0m
+    ?[36mAnd ?[0m?[36mput city &lt;city&gt;?[0m
+    ?[36mAnd ?[0m?[36mselect state &lt;state&gt;?[0m
+    ?[36mAnd ?[0m?[36mput postal &lt;postal&gt;?[0m
+    ?[36mAnd ?[0m?[36mselect country &lt;country&gt;?[0m
+    ?[36mAnd ?[0m?[36mput mobilephone &lt;phone&gt;?[0m
+    ?[36mAnd ?[0m?[36mput alias &lt;alias&gt;?[0m
+    ?[36mAnd ?[0m?[36mclick register?[0m
+    ?[36mThen ?[0m?[36mlog out with new user &lt;firstname&gt;?[0m
+
+    Examples: 
+
+  @ValidLogin @SmokeTest
+  Scenario Outline: The user registers in the portal ?[90m# LoginUser.feature:31?[0m
+    ?[32mGiven ?[0m?[32mthe customer is on the main page?[0m           ?[90m# LoginUserSteps.elClienteSeEncuentraEnLaPaginaDeBusqueda()?[0m
+    ?[32mWhen ?[0m?[32mclick sig in?[0m                                ?[90m# LoginUserSteps.theCustomerClickTheLoginButton()?[0m
+    ?[32mAnd ?[0m?[32menter the email ?[0m?[32m?[1mdd@doritos.com.pe?[0m            ?[90m# LoginUserSteps.enterUserUser(String)?[0m
+    ?[32mAnd ?[0m?[32mclick the create an account?[0m                  ?[90m# LoginUserSteps.pageShowsProductTitle()?[0m
+    ?[32mAnd ?[0m?[32mclick title ?[0m?[32m?[1mMr.?[0m                              ?[90m# LoginUserSteps.theCustomerADDTOCARTOfTheProductProduct(String)?[0m
+    ?[32mAnd ?[0m?[32mput firstname ?[0m?[32m?[1mchristian?[0m                      ?[90m# LoginUserSteps.putfirstname(String)?[0m
+    ?[32mAnd ?[0m?[32mput lastname ?[0m?[32m?[1mmujica?[0m                          ?[90m# LoginUserSteps.lastname(String)?[0m
+    ?[32mAnd ?[0m?[32mput password ?[0m?[32m?[1m12345?[0m                           ?[90m# LoginUserSteps.password(String)?[0m
+    ?[32mAnd ?[0m?[32mselect day ?[0m?[32m?[1m18?[0m                                ?[90m# LoginUserSteps.selectday(String)?[0m
+    ?[32mAnd ?[0m?[32mselect month ?[0m?[32m?[1m4?[0m                               ?[90m# LoginUserSteps.selectmonth(String)?[0m
+    ?[32mAnd ?[0m?[32mselect year ?[0m?[32m?[1m1979?[0m                             ?[90m# LoginUserSteps.selectyear(String)?[0m
+    ?[32mAnd ?[0m?[32mput address ?[0m?[32m?[1mjr. bb 324?[0m                       ?[90m# LoginUserSteps.putaddress(String)?[0m
+    ?[32mAnd ?[0m?[32mput city ?[0m?[32m?[1mlima?[0m                                ?[90m# LoginUserSteps.putcity(String)?[0m
+    ?[32mAnd ?[0m?[32mselect state ?[0m?[32m?[1mFlorida?[0m                         ?[90m# LoginUserSteps.selectstate(String)?[0m
+    ?[32mAnd ?[0m?[32mput postal ?[0m?[32m?[1m00001?[0m                             ?[90m# LoginUserSteps.putpostal(String)?[0m
+    ?[32mAnd ?[0m?[32mselect country ?[0m?[32m?[1mUnited States?[0m                 ?[90m# LoginUserSteps.selectcountry(String)?[0m
+    ?[32mAnd ?[0m?[32mput mobilephone ?[0m?[32m?[1m945451241?[0m                    ?[90m# LoginUserSteps.selectmobile(String)?[0m
+    ?[32mAnd ?[0m?[32mput alias ?[0m?[32m?[1mnear to home?[0m                       ?[90m# LoginUserSteps.selectalias(String)?[0m
+    ?[32mAnd ?[0m?[32mclick register?[0m                               ?[90m# LoginUserSteps.clickregister()?[0m
+    ?[32mThen ?[0m?[32mlog out with new user ?[0m?[32m?[1mchristian?[0m             ?[90m# LoginUserSteps.logoutwithnewuser(String)?[0m
+</pre>
+</span>
+</div>
+<div id="tab2" class="tab">
+<h2>Standard error</h2>
+<span class="code">
+<pre>Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 3619
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+nov. 11, 2021 11:02:16 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 6.8</a> at 11 nov. 2021 11:02:57</p>
+</div>
+</div>
+</body>
+</html>

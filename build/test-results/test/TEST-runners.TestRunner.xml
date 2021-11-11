@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="runners.TestRunner" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-11-11T16:02:10" hostname="MacBook-Pro-M1-de-Christian.local" time="46.673">
+  <properties/>
+  <testcase name="feature[0](User login)" classname="runners.TestRunner" time="46.673"/>
+  <system-out><![CDATA[@SmokeTest
+Feature: User login
+
+  @ValidLogin
+  Scenario Outline: The user registers in the portal ?[90m# LoginUser.feature:5?[0m
+    ?[36mGiven ?[0m?[36mthe customer is on the main page?[0m
+    ?[36mWhen ?[0m?[36mclick sig in?[0m
+    ?[36mAnd ?[0m?[36menter the email <email>?[0m
+    ?[36mAnd ?[0m?[36mclick the create an account?[0m
+    ?[36mAnd ?[0m?[36mclick title <title>?[0m
+    ?[36mAnd ?[0m?[36mput firstname <firstname>?[0m
+    ?[36mAnd ?[0m?[36mput lastname <lastname>?[0m
+    ?[36mAnd ?[0m?[36mput password <password>?[0m
+    ?[36mAnd ?[0m?[36mselect day <day>?[0m
+    ?[36mAnd ?[0m?[36mselect month <month>?[0m
+    ?[36mAnd ?[0m?[36mselect year <year>?[0m
+    ?[36mAnd ?[0m?[36mput address <address>?[0m
+    ?[36mAnd ?[0m?[36mput city <city>?[0m
+    ?[36mAnd ?[0m?[36mselect state <state>?[0m
+    ?[36mAnd ?[0m?[36mput postal <postal>?[0m
+    ?[36mAnd ?[0m?[36mselect country <country>?[0m
+    ?[36mAnd ?[0m?[36mput mobilephone <phone>?[0m
+    ?[36mAnd ?[0m?[36mput alias <alias>?[0m
+    ?[36mAnd ?[0m?[36mclick register?[0m
+    ?[36mThen ?[0m?[36mlog out with new user <firstname>?[0m
+
+    Examples: 
+
+  @ValidLogin @SmokeTest
+  Scenario Outline: The user registers in the portal ?[90m# LoginUser.feature:31?[0m
+    ?[32mGiven ?[0m?[32mthe customer is on the main page?[0m           ?[90m# LoginUserSteps.elClienteSeEncuentraEnLaPaginaDeBusqueda()?[0m
+    ?[32mWhen ?[0m?[32mclick sig in?[0m                                ?[90m# LoginUserSteps.theCustomerClickTheLoginButton()?[0m
+    ?[32mAnd ?[0m?[32menter the email ?[0m?[32m?[1mdd@doritos.com.pe?[0m            ?[90m# LoginUserSteps.enterUserUser(String)?[0m
+    ?[32mAnd ?[0m?[32mclick the create an account?[0m                  ?[90m# LoginUserSteps.pageShowsProductTitle()?[0m
+    ?[32mAnd ?[0m?[32mclick title ?[0m?[32m?[1mMr.?[0m                              ?[90m# LoginUserSteps.theCustomerADDTOCARTOfTheProductProduct(String)?[0m
+    ?[32mAnd ?[0m?[32mput firstname ?[0m?[32m?[1mchristian?[0m                      ?[90m# LoginUserSteps.putfirstname(String)?[0m
+    ?[32mAnd ?[0m?[32mput lastname ?[0m?[32m?[1mmujica?[0m                          ?[90m# LoginUserSteps.lastname(String)?[0m
+    ?[32mAnd ?[0m?[32mput password ?[0m?[32m?[1m12345?[0m                           ?[90m# LoginUserSteps.password(String)?[0m
+    ?[32mAnd ?[0m?[32mselect day ?[0m?[32m?[1m18?[0m                                ?[90m# LoginUserSteps.selectday(String)?[0m
+    ?[32mAnd ?[0m?[32mselect month ?[0m?[32m?[1m4?[0m                               ?[90m# LoginUserSteps.selectmonth(String)?[0m
+    ?[32mAnd ?[0m?[32mselect year ?[0m?[32m?[1m1979?[0m                             ?[90m# LoginUserSteps.selectyear(String)?[0m
+    ?[32mAnd ?[0m?[32mput address ?[0m?[32m?[1mjr. bb 324?[0m                       ?[90m# LoginUserSteps.putaddress(String)?[0m
+    ?[32mAnd ?[0m?[32mput city ?[0m?[32m?[1mlima?[0m                                ?[90m# LoginUserSteps.putcity(String)?[0m
+    ?[32mAnd ?[0m?[32mselect state ?[0m?[32m?[1mFlorida?[0m                         ?[90m# LoginUserSteps.selectstate(String)?[0m
+    ?[32mAnd ?[0m?[32mput postal ?[0m?[32m?[1m00001?[0m                             ?[90m# LoginUserSteps.putpostal(String)?[0m
+    ?[32mAnd ?[0m?[32mselect country ?[0m?[32m?[1mUnited States?[0m                 ?[90m# LoginUserSteps.selectcountry(String)?[0m
+    ?[32mAnd ?[0m?[32mput mobilephone ?[0m?[32m?[1m945451241?[0m                    ?[90m# LoginUserSteps.selectmobile(String)?[0m
+    ?[32mAnd ?[0m?[32mput alias ?[0m?[32m?[1mnear to home?[0m                       ?[90m# LoginUserSteps.selectalias(String)?[0m
+    ?[32mAnd ?[0m?[32mclick register?[0m                               ?[90m# LoginUserSteps.clickregister()?[0m
+    ?[32mThen ?[0m?[32mlog out with new user ?[0m?[32m?[1mchristian?[0m             ?[90m# LoginUserSteps.logoutwithnewuser(String)?[0m
+]]></system-out>
+  <system-err><![CDATA[Starting ChromeDriver 95.0.4638.54 (d31a821ec901f68d0d34ccdbaea45b4c86ce543e-refs/branch-heads/4638@{#871}) on port 3619
+Only local connections are allowed.
+Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+ChromeDriver was started successfully.
+nov. 11, 2021 11:02:16 A.M. org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>

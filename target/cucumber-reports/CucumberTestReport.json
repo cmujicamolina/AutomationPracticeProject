@@ -1,0 +1,433 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 31,
+        "name": "The user registers in the portal",
+        "description": "",
+        "id": "user-login;the-user-registers-in-the-portal;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 84031625,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginUserSteps.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 10186410875,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the customer is on the main page",
+            "match": {
+              "location": "LoginUserSteps.elClienteSeEncuentraEnLaPaginaDeBusqueda()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3580390167,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "click sig in",
+            "match": {
+              "location": "LoginUserSteps.theCustomerClickTheLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2337484042,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter the email dd@doritos.com.pe",
+            "match": {
+              "arguments": [
+                {
+                  "val": "dd@doritos.com.pe",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginUserSteps.enterUserUser(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2186887292,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click the create an account",
+            "match": {
+              "location": "LoginUserSteps.pageShowsProductTitle()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2695970792,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click title Mr.",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mr.",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginUserSteps.theCustomerADDTOCARTOfTheProductProduct(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2214652875,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "put firstname christian",
+            "match": {
+              "arguments": [
+                {
+                  "val": "christian",
+                  "offset": 14
+                }
+              ],
+              "location": "LoginUserSteps.putfirstname(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2222046791,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "put lastname mujica",
+            "match": {
+              "arguments": [
+                {
+                  "val": "mujica",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginUserSteps.lastname(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2142533333,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "put password 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12345",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginUserSteps.password(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1167896458,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "select day 18",
+            "match": {
+              "arguments": [
+                {
+                  "val": "18",
+                  "offset": 11
+                }
+              ],
+              "location": "LoginUserSteps.selectday(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1099049708,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "select month 4",
+            "match": {
+              "arguments": [
+                {
+                  "val": "4",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginUserSteps.selectmonth(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1150594333,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "select year 1979",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1979",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginUserSteps.selectyear(String)"
+            },
+            "matchedColumns": [
+              7
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1390629083,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "put address jr. bb 324",
+            "match": {
+              "arguments": [
+                {
+                  "val": "jr. bb 324",
+                  "offset": 12
+                }
+              ],
+              "location": "LoginUserSteps.putaddress(String)"
+            },
+            "matchedColumns": [
+              8
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1150787750,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "put city lima",
+            "match": {
+              "arguments": [
+                {
+                  "val": "lima",
+                  "offset": 9
+                }
+              ],
+              "location": "LoginUserSteps.putcity(String)"
+            },
+            "matchedColumns": [
+              9
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1112960959,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "select state Florida",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Florida",
+                  "offset": 13
+                }
+              ],
+              "location": "LoginUserSteps.selectstate(String)"
+            },
+            "matchedColumns": [
+              10
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1176545750,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "put postal 00001",
+            "match": {
+              "arguments": [
+                {
+                  "val": "00001",
+                  "offset": 11
+                }
+              ],
+              "location": "LoginUserSteps.putpostal(String)"
+            },
+            "matchedColumns": [
+              11
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1070632459,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "select country United States",
+            "match": {
+              "arguments": [
+                {
+                  "val": "United States",
+                  "offset": 15
+                }
+              ],
+              "location": "LoginUserSteps.selectcountry(String)"
+            },
+            "matchedColumns": [
+              12
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1143867875,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "put mobilephone 945451241",
+            "match": {
+              "arguments": [
+                {
+                  "val": "945451241",
+                  "offset": 16
+                }
+              ],
+              "location": "LoginUserSteps.selectmobile(String)"
+            },
+            "matchedColumns": [
+              13
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4505160416,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "put alias near to home",
+            "match": {
+              "arguments": [
+                {
+                  "val": "near to home",
+                  "offset": 10
+                }
+              ],
+              "location": "LoginUserSteps.selectalias(String)"
+            },
+            "matchedColumns": [
+              14
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3709357958,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "click register",
+            "match": {
+              "location": "LoginUserSteps.clickregister()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 121163209,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "log out with new user christian",
+            "match": {
+              "arguments": [
+                {
+                  "val": "christian",
+                  "offset": 22
+                }
+              ],
+              "location": "LoginUserSteps.logoutwithnewuser(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@ValidLogin"
+          },
+          {
+            "line": 1,
+            "name": "@SmokeTest"
+          }
+        ]
+      }
+    ],
+    "name": "User login",
+    "description": "",
+    "id": "user-login",
+    "keyword": "Feature",
+    "uri": "LoginUser.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@SmokeTest"
+      }
+    ]
+  }
+]
